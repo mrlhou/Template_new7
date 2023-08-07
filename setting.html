@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <!-- External files -->
+    <!-- ===== Css Files -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/slideBar.css" />
+    <link rel="stylesheet" href="css/ct-header.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/setting.css" />
+    <!-- ==== Font Awsome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="page">
+            <span class="up flex ali-center tr-0-4s" id="up"><i class="fa-solid fa-caret-up"></i></span>
+      <div class="slideBar tr-0-4s p-t-20 bg-white">
+        <h3 class="tr-0-4s">lhou</h3>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><i class="fa-solid fa-chart-line fa-fw"></i>
+              <span>dashboard</span></a
+            >
+          </li>
+          <li>
+            <a class="active" href="setting.html"
+              ><i class="fa-solid fa-gear fa-fw"></i><span>setting</span></a
+            >
+          </li>
+          <li>
+            <a href="profile.html"
+              ><i class="fa-regular fa-user fa-fw"></i><span>profile</span></a
+            >
+          </li>
+          <li>
+            <a href="projects.html"
+              ><i class="fa-solid fa-diagram-project fa-fw"></i
+              ><span>projects</span></a
+            >
+          </li>
+          <li>
+            <a href="courses.html"
+              ><i class="fa-solid fa-graduation-cap fa-fw"></i
+              ><span>courses</span></a
+            >
+          </li>
+          <li>
+            <a href="friends.html"
+              ><i class="fa-regular fa-circle-user fa-fw"></i
+              ><span>friends</span></a
+            >
+          </li>
+          <li>
+            <a href="files.html"
+              ><i class="fa-regular fa-file fa-fw"></i><span>files</span></a
+            >
+          </li>
+          <li>
+            <a href="plans.html"
+              ><i class="fa-regular fa-credit-card fa-fw"></i
+              ><span>plans</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <header>
+          <div class="search-box">
+            <input
+              type="search"
+              placeholder="type a keyword"
+              class="br-rd-10"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="icons">
+            <span class="light-dark p-relative br-rd-10"></span>
+            <span class="notification"><i class="fa-regular fa-bell"></i></span>
+            <div class="img br-rd-circle">
+              <img src="imgs/user.png" alt="user" />
+            </div>
+          </div>
+        </header>
+        <h1 class="page-name">setting</h1>
+        <div class="content-boxes p-20 grid ali-center">
+          <div class="site-control tr-0-4s h-full bg-white br-rd-10 p-20">
+            <div class="head-info txt-cap m-b-10">
+              <h2 class="m-b-10">site control</h2>
+              <p>control the website if there is maintenance</p>
+            </div>
+            <div class="box-body p-t-20">
+              <div class="flex ali-center j-s-b">
+                <div class="txt-cap">
+                  <span class="m-b-10 block">website controle</span>
+                  <p style="color: var(--gray)">
+                    open/close website and type the reason
+                  </p>
+                </div>
+                <label>
+                  <input type="checkbox" class="type-toggle" checked />
+                  <div class="toggle-switch p-relative"></div>
+                </label>
+              </div>
+              <textarea
+                placeholder="Close Message Content"
+                class="br-rd-10 tr-0-4s"
+              ></textarea>
+            </div>
+          </div>
+          <div class="general-info tr-0-4s h-full bg-white br-rd-10 p-20">
+            <div class="head-info txt-cap m-b-10">
+              <h2 class="m-b-10">general info</h2>
+              <p>General Information About Your Account</p>
+            </div>
+            <div class="box-body p-t-20">
+              <form class="flex txt-cap">
+                <label class="m-b-10">first name</label>
+                <input
+                  type="text"
+                  placeholder="first name"
+                  class="m-b-10 br-rd-10"
+                />
+                <label class="m-b-10">last name</label>
+                <input
+                  type="text"
+                  placeholder="last name"
+                  class="m-b-10 br-rd-10"
+                />
+                <label class="m-b-10">email</label>
+                <div class="flex ali-center j-s-b">
+                  <input
+                    type="email"
+                    value="mrlhou62@gmail.com"
+                    disabled
+                    class="br-rd-10"
+                  />
+                  <input type="submit" value="change" class="txt-cap" />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="security tr-0-4s h-full bg-white br-rd-10 p-20">
+            <div class="head-info txt-cap m-b-10">
+              <h2 class="m-b-10">security info</h2>
+              <p>security information about your account</p>
+            </div>
+            <div class="box-body p-t-20">
+              <div class="flex ali-center j-s-b m-b-10">
+                <div class="txt-cap">
+                  <span class="m-b-10 block">website controle</span>
+                  <p style="color: var(--gray)">
+                    open/close website and type the reason
+                  </p>
+                </div>
+                <a href="#" class="txt-cap br-rd-10 cl-white bg-blue tr-0-4s"
+                  >change</a
+                >
+              </div>
+              <div class="flex ali-center j-s-b m-b-10">
+                <div class="txt-cap">
+                  <span class="m-b-10 block">website controle</span>
+                  <p style="color: var(--gray)">
+                    open/close website and type the reason
+                  </p>
+                </div>
+                <label>
+                  <input type="checkbox" class="type-toggle" checked />
+                  <div class="toggle-switch p-relative"></div>
+                </label>
+              </div>
+              <div class="flex ali-center j-s-b m-b-10">
+                <div class="txt-cap">
+                  <span class="m-b-10 block">website controle</span>
+                  <p style="color: var(--gray)">
+                    open/close website and type the reason
+                  </p>
+                </div>
+                <a href="#" class="txt-cap br-rd-10 tr-0-4s">deivces</a>
+              </div>
+            </div>
+          </div>
+          <div class="social-info tr-0-4s h-full bg-white br-rd-10 p-20">
+            <div class="head-info txt-cap m-b-10">
+              <h2 class="m-b-10">social info</h2>
+              <p>security information about your account</p>
+            </div>
+            <div class="box-body p-t-20">
+              <ul>
+                <li class="flex">
+                  <input type="text" placeholder="twitter username" />
+                  <label><i class="fa-brands fa-twitter tr-0-4s"></i></label>
+                </li>
+                <li class="flex">
+                  <input type="text" placeholder="facebook username" />
+                  <label><i class="fa-brands fa-facebook-f tr-0-4s"></i></label>
+                </li>
+                <li class="flex">
+                  <input type="text" placeholder="youtube username" />
+                  <label><i class="fa-brands fa-youtube tr-0-4s"></i></label>
+                </li>
+                <li class="flex">
+                  <input type="text" placeholder="linkedin username" />
+                  <label
+                    ><i class="fa-brands fa-linkedin-in tr-0-4s"></i
+                  ></label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="widgets-control tr-0-4s h-full bg-white br-rd-10 p-20">
+            <div class="head-info txt-cap m-b-10">
+              <h2 class="m-b-10">widgets control</h2>
+              <p>show/hide widgets</p>
+            </div>
+            <div class="box-body p-t-20">
+              <ul>
+                <li class="m-b-10 txt-cap">
+                  <input
+                    type="checkbox"
+                    id="check1"
+                    class="type-toggle"
+                    checked
+                  />
+                  <label for="check1" class="p-relative">quick draft</label>
+                </li>
+                <li class="m-b-10 txt-cap">
+                  <input
+                    type="checkbox"
+                    id="check2"
+                    class="type-toggle"
+                    checked
+                  />
+                  <label for="check2" class="p-relative">yearly targets</label>
+                </li>
+                <li class="m-b-10 txt-cap">
+                  <input
+                    type="checkbox"
+                    id="check3"
+                    class="type-toggle"
+                    checked
+                  />
+                  <label for="check3" class="p-relative"
+                    >Tickets Statistics</label
+                  >
+                </li>
+                <li class="m-b-10 txt-cap">
+                  <input
+                    type="checkbox"
+                    id="check4"
+                    class="type-toggle"
+                    checked
+                  />
+                  <label for="check4" class="p-relative">Latest News</label>
+                </li>
+                <li class="m-b-10 txt-cap">
+                  <input type="checkbox" id="check5" class="type-toggle" />
+                  <label for="check5" class="p-relative">Latest Tasks</label>
+                </li>
+                <li class="m-b-10 txt-cap">
+                  <input
+                    type="checkbox"
+                    id="check6"
+                    class="type-toggle"
+                    checked
+                  />
+                  <label for="check6" class="p-relative"
+                    >Top Search Items</label
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="backup-manager tr-0-4s h-full bg-white br-rd-10 p-20">
+            <div class="head-info txt-cap m-b-10">
+              <h2 class="m-b-10">backup manager</h2>
+              <p>control backup time and location</p>
+            </div>
+            <div class="box-body p-t-20">
+              <ul class="dates m-b-10">
+                <li>
+                  <input type="radio" name="time" id="daily" />
+                  <label for="daily" class="txt-cap p-relative">daily</label>
+                </li>
+                <li>
+                  <input type="radio" name="time" id="monthly" checked />
+                  <label for="monthly" class="txt-cap p-relative">
+                    monthly
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="time" id="yearly" />
+                  <label for="yearly" class="txt-cap p-relative">yearly</label>
+                </li>
+              </ul>
+              <ul class="servers grid">
+                <li>
+                  <input type="radio" name="server" id="megaman" />
+                  <label for="megaman" class="txt-cap">
+                    <i class="fa-solid fa-server m-b-10"></i>
+                    <span>megaman</span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="server" id="zero" checked />
+                  <label for="zero" class="txt-cap">
+                    <i class="fa-solid fa-server m-b-10"></i>
+                    <span>zero</span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="server" id="sigma" />
+                  <label for="sigma" class="txt-cap">
+                    <i class="fa-solid fa-server m-b-10"></i>
+                    <span>sigma</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- File External -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

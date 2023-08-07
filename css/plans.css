@@ -1,0 +1,94 @@
+/* Plans */
+.content-boxes {
+  height: auto;
+}
+.box .box-head {
+  padding: 20px;
+  text-align: center;
+  height: auto;
+}
+.box {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.box .box-head::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid var(--white);
+}
+.box .box-head h2 {
+  font-size: 40px;
+  width: fit-content;
+  margin: auto;
+  font-weight: 500;
+}
+.box .box-head h2::before {
+  content: "$";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  font-size: 20px;
+}
+.box .box-head span {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.box .correct {
+  color: var(--green);
+}
+.box .uncorrect {
+  color: var(--red);
+}
+.box li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--bg);
+}
+.box li i {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+.box li i:last-of-type {
+  background-color: var(--gray);
+  font-size: 10px;
+}
+.box li span {
+  flex: 1;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.box a {
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* Shared Values */
+.free .box-head,
+.free a {
+  background-color: var(--green);
+}
+
+.basic .box-head,
+.basic a {
+  background-color: var(--blue);
+}
+
+.premuim .box-head,
+.premuim a {
+  background-color: var(--orange);
+}
+
+/* Mode Dark */
+.content.dark .box {
+  background-color: var(--dark-mode-alt);
+}

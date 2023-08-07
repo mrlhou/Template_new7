@@ -1,0 +1,75 @@
+/* Friends */
+.content-friends .box {
+  text-align: center;
+}
+.content-friends .box img {
+  width: 100px;
+  height: 100px;
+}
+.content-friends .box > span {
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.content-friends .box .icons {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--bg);
+  border-top: 1px solid var(--bg);
+  font-weight: 600;
+  font-size: 15px;
+}
+.content-friends .box .icons li i {
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  margin-right: 20px;
+}
+.content-friends .box .info span {
+  font-size: 13px;
+}
+.content-friends .box .info a {
+  font-size: 14px;
+  width: fit-content;
+  margin-left: 10px;
+  padding: 2px 10px;
+  border-radius: 7px;
+}
+.content-friends .box .info div a:last-child {
+  background-color: var(--red);
+}
+.contact-icon {
+  top: 10px;
+  left: 10px;
+}
+.contact-icon i {
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+  background-color: var(--bg);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  border-radius: 50px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.contact-icon i:hover {
+  color: var(--white);
+}
+/* Shared values */
+.contact-icon i:hover,
+.content-friends .box .info div a:first-child {
+  background-color: var(--blue);
+}
+
+/* Mode Dark */
+.content.dark .box {
+  background-color: var(--dark-mode-alt);
+}
+.content.dark .contact-icon i {
+  background-color: var(--dark-mode-alt-two);
+}
+.content.dark .contact-icon i:hover {
+  background-color: var(--blue);
+}

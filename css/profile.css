@@ -1,0 +1,259 @@
+/* Profile */
+/* 1- My Profile Part */
+/* 1-1 user Info Part ==== */
+.my-profile .user-info {
+  justify-content: center;
+  flex-direction: column;
+  flex-basis: 20%;
+}
+.my-profile .user-info::before {
+  position: absolute;
+  content: "";
+  height: 70%;
+  width: 2px;
+  background-color: var(--bg);
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.my-profile .user-info::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--bg);
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  display: none;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.my-profile .user-info .img {
+  width: 120px;
+  height: 120px;
+}
+.my-profile .user-info .img img {
+  width: 100%;
+}
+.my-profile .user-info .stars {
+  color: var(--orange);
+  padding: 5px 0;
+}
+.my-profile .user-info .level-progress {
+  width: 80%;
+  height: 5px;
+  background-color: var(--bg);
+  margin: 10px 0;
+}
+.my-profile .user-info .level-progress::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 80%;
+  height: 100%;
+  background-color: var(--blue);
+}
+.my-profile .user-info span:last-child {
+  font-size: 14px;
+}
+/* 1-2 box body Part ==== */
+.my-profile .box-body {
+  flex: 1;
+}
+
+.my-profile .box-body > div {
+  padding: 10px 20px;
+  font-size: 15px;
+}
+.my-profile .box-body > div:hover {
+  background-color: var(--bg);
+}
+.my-profile .box-body > div ul {
+  width: 80%;
+  padding: 15px 0;
+}
+.my-profile .box-body > div ul li span {
+  color: var(--black);
+  font-weight: 600;
+  padding-left: 10px;
+}
+.my-profile .box-body label {
+  width: fit-content;
+}
+.my-profile .toggle-switch {
+  height: 20px;
+  background-color: #ccc;
+}
+.my-profile .toggle-switch::before {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 15px;
+  right: 75%;
+}
+
+@media (max-width: 767px) {
+  .my-profile > div {
+    flex-direction: column;
+  }
+  .my-profile .user-info::before {
+    display: none;
+  }
+  .my-profile .user-info::after {
+    display: block;
+  }
+  .my-profile .user-info .level-progress::before {
+    width: 100%;
+  }
+  .my-profile .box-body {
+    width: 100%;
+  }
+  .my-profile .box-body > div {
+    text-align: center;
+  }
+  .my-profile .box-body > div ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .my-profile .box-body > div ul li {
+    margin-bottom: 10px;
+  }
+  .my-profile .box-body > div label {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* 2- my skills Part */
+.content-boxes-works {
+  grid-template-columns: 25% 75%;
+  gap: 20px;
+}
+.my-skills {
+  width: fit-content;
+}
+.my-skills ul li {
+  padding: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  flex-wrap: wrap;
+}
+.my-skills ul li:last-child {
+  padding-bottom: 0;
+}
+.my-skills ul li:not(:last-child) {
+  border-bottom: 1px solid var(--bg);
+}
+.my-skills ul li span {
+  margin-right: 10px;
+  padding: 10px;
+  background-color: var(--bg);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* 3- latest activites Part */
+.latest-activites {
+  width: 70%;
+}
+.latest-activites ul li:last-child {
+  padding-bottom: 10px;
+}
+.latest-activites li {
+  padding: 20px 0;
+}
+.latest-activites li .info {
+  flex: 1;
+}
+.latest-activites li div {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+.latest-activites li div span:first-child {
+  font-weight: 600;
+}
+.latest-activites li img {
+  width: 80px;
+  height: 80px;
+}
+@media (max-width: 767px) {
+  .content-boxes-works {
+    grid-template-columns: none;
+  }
+  .my-profile + div {
+    flex-direction: column;
+  }
+  .my-skills,
+  .latest-activites {
+    width: 100%;
+  }
+  .my-skills ul li {
+    justify-content: center;
+  }
+  .latest-activites li {
+    flex-direction: column;
+  }
+  .latest-activites li div {
+    align-items: center;
+    padding-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .my-profile .box-body > div ul {
+    width: 100%;
+  }
+}
+/* Shared Values */
+.my-profile .box-body > div:not(:last-child),
+.latest-activites li:not(:last-child) {
+  border-bottom: 1px solid var(--bg);
+}
+
+/* Mode Dark */
+.content.dark .my-profile > div,
+.content.dark .my-skills,
+.content.dark .latest-activites {
+  background-color: var(--dark-mode-alt);
+}
+
+.content.dark h4,
+.content.dark .my-profile .box-body > div ul li span {
+  color: var(--bg);
+}
+
+.content.dark .my-profile .user-info::before,
+.content.dark .my-profile .user-info::after {
+  background-color: var(--dark-mode-alt-two);
+}
+
+.content.dark .my-profile .box-body > div:hover,
+.content.dark .my-skills ul li span {
+  background-color: var(--dark-mode-alt-two);
+}

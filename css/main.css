@@ -1,0 +1,220 @@
+/* Font Google (Open Sans) */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+*:focus {
+  outline: none;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0075ff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0075ff;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+.page {
+  display: flex;
+  background-color: #f1f5f9;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  color: var(--black);
+}
+.page.dark {
+  background-color: var(--dark-mode);
+  color: var(--bg);
+}
+.content {
+  flex: 1;
+}
+.content.dark .page-name {
+  color: var(--bg);
+}
+.content .page-name {
+  padding: 30px;
+  position: relative;
+  width: fit-content;
+  text-transform: capitalize;
+  color: var(--black);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.content .page-name::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 60px);
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    var(--black) 30%,
+    var(--white) 30% 100%
+  );
+  bottom: 20px;
+  left: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.content.dark .page-name::before {
+  background: linear-gradient(
+    to right,
+    var(--dark-mode-alt-two) 30%,
+    var(--bg) 30% 100%
+  );
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  color: var(--gray);
+}
+
+.content-boxes {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .content-boxes {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: auto;
+  }
+}
+
+/* Colors and Sizes*/
+:root {
+  --green: #22c55e;
+  --red: #f44336;
+  --blue: #0075ff;
+  --orange: #f59e0b;
+  --gray: #888;
+  --white: #fff;
+  --black: #222;
+  --bg: #eee;
+  --dark-mode: rgb(30, 2, 60);
+  --dark-mode-alt: #3c0e6a;
+  --dark-mode-alt-two: #2b0552;
+  --fa-style-family-classic: "Font Awesome 6 Free";
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.toggle-switch {
+  width: 90px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: var(--bg);
+  cursor: pointer;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.page.dark .toggle-switch{
+  background-color: var(--dark-mode-alt-two);
+}
+.type-toggle:checked + .toggle-switch {
+  background-color: var(--blue);
+}
+.type-toggle:checked + .toggle-switch::before {
+  content: "\f00c";
+  color: var(--blue);
+  right: 6px;
+}
+.toggle-switch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  position: absolute;
+  font-weight: 900;
+  font-size: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 60%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: var(--white);
+  color: var(--gray);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.content-courses,
+.content-friends {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.up{
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 10px;
+    background-color: #2196f3;
+    color: var(--bg);
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 100;
+}
+.up.show{
+      visibility: visible;
+    opacity: 1;
+}
+    .up::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color:  var(--blue);
+    z-index: -1;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    left: 0;
+}
+    .page.dark .up::before{
+      background-color: var(--dark-mode-alt-two);
+    }
+.up:hover::before{
+  width: 100%;
+}

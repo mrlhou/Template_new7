@@ -1,0 +1,83 @@
+/* projetcs */
+.box .date {
+  right: 10px;
+  top: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.box .imgs {
+  margin-top: 40px;
+}
+.box .imgs img {
+  width: 40px;
+  height: 40px;
+}
+.box .imgs img:not(:first-child) {
+  margin-left: -20px;
+}
+.box .tags {
+  margin: 10px 0 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--bg);
+  border-top: 1px solid var(--bg);
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.box .tags span {
+  padding: 5px 10px;
+  background-color: var(--bg);
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.box .in-prog {
+  width: 40%;
+  height: 5px;
+  background-color: var(--bg);
+}
+.box .in-prog::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.box:first-child .in-prog::before {
+  background-color: var(--orange);
+}
+.box:nth-child(2) .in-prog::before {
+  background-color: var(--red);
+}
+.box:nth-child(3) .in-prog::before {
+  background-color: var(--blue);
+}
+.box:nth-child(4) .in-prog::before {
+  background-color: var(--black);
+}
+.box:last-child .in-prog::before {
+  background-color: var(--green);
+}
+
+@media (max-width: 767px) {
+  .box .progress {
+    flex-direction: column;
+  }
+  .box .in-prog {
+    margin-bottom: 20px;
+    width: 90%;
+  }
+}
+
+/* Mode Dark */
+.content.dark .box {
+  background-color: var(--dark-mode-alt);
+}
+.content.dark .box .tags span{
+  background-color: var(--dark-mode-alt-two);
+}

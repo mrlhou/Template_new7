@@ -1,0 +1,657 @@
+/* Start Dash */
+/* Welcome Part */
+.head {
+  background-color: var(--bg);
+  border-radius: 8px 8px 0 0;
+}
+.head .img {
+  width: 200px;
+  height: 100px;
+}
+.head .img img {
+  object-fit: cover;
+}
+.head .user {
+  width: 10%;
+  top: 100%;
+  transform: translateY(-50%);
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+@media (max-width: 767px) {
+  .head .user {
+    width: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+}
+.head-info h2 {
+  letter-spacing: 1px;
+}
+.head-info p {
+  padding-left: 6px;
+}
+.welcome .box-body {
+  margin-top: 40px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 30px 0;
+  justify-content: space-around;
+}
+@media (max-width: 767px) {
+  .welcome .box-body {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.welcome .box-body div {
+  flex-direction: column;
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 10px;
+}
+.welcome .box-body span:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.welcome .box-body span:last-child {
+  font-size: 14px;
+}
+
+.Quixk-Draft a {
+  margin-right: 0;
+}
+
+@media (max-width: 767px) {
+  .welcome a,
+  .Quixk-Draft a {
+    margin-right: 10px;
+  }
+}
+
+/* Quixk Draft Part */
+.Quixk-Draft .box-body {
+  flex-direction: column;
+}
+.Quixk-Draft .box-body input {
+  padding: 5px 10px;
+  background-color: var(--bg);
+  outline: none;
+  border: 1px #ccc solid;
+  margin: 20px 0;
+}
+.Quixk-Draft .box-body textarea {
+  padding: 10px;
+  background-color: var(--bg);
+  border: 1px #ccc solid;
+  height: 180px;
+  resize: none;
+}
+/* Yearly Targets Part */
+.Yearly-Targets .box-body {
+  padding: 20px 0;
+}
+.Yearly-Targets .box-body > div {
+  padding: 10px 0;
+}
+.Yearly-Targets .box-body div .icon {
+  display: block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 25px;
+  margin-right: 15px;
+}
+.Yearly-Targets .box-body div:first-child .icon {
+  background-color: rgb(0 117 255 / 20%);
+}
+.Yearly-Targets .box-body div:nth-child(2) .icon {
+  background-color: rgb(245 158 11 / 20%);
+}
+.Yearly-Targets .box-body div:last-child .icon {
+  background-color: rgb(34 197 94 / 20%);
+}
+
+.Yearly-Targets .box-body div .info {
+  flex-direction: column;
+  flex: 1;
+}
+.Yearly-Targets .box-body div .info .number {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 7px 0;
+}
+.Yearly-Targets .box-body div .info .progress {
+  display: block;
+  height: 5px;
+}
+.Yearly-Targets .box-body div .info .progress::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  height: 100%;
+}
+.Yearly-Targets .box-body div .info .progress::after {
+  position: absolute;
+  content: attr(data-prog);
+  top: -36px;
+  padding: 2px 5px;
+  border-radius: 10px;
+  color: var(--white);
+}
+.Yearly-Targets .box-body div:first-child .info .progress {
+  background-color: rgb(0 117 255 / 20%);
+}
+.Yearly-Targets .box-body div:nth-child(2) .info .progress {
+  background-color: rgb(245 158 11 / 20%);
+}
+.Yearly-Targets .box-body div:last-child .info .progress {
+  background-color: rgb(34 197 94 / 20%);
+}
+
+.Yearly-Targets .box-body div:first-child .info .progress::before {
+  width: 80%;
+}
+.Yearly-Targets .box-body div:first-child .info .progress::after {
+  left: 75%;
+}
+.Yearly-Targets .box-body div:nth-child(2) .info .progress::before {
+  width: 55%;
+}
+.Yearly-Targets .box-body div:nth-child(2) .info .progress::after {
+  left: 50%;
+}
+.Yearly-Targets .box-body div:last-child .info .progress::before {
+  width: 75%;
+}
+.Yearly-Targets .box-body div:last-child .info .progress::after {
+  left: 70%;
+}
+.Yearly-Targets .box-body div .info .progress .brd {
+  top: -10px;
+  border-style: solid;
+  border-width: 7px;
+}
+.Yearly-Targets .box-body div:first-child .info .progress .brd {
+  border-color: var(--blue) transparent transparent transparent;
+  left: 78%;
+}
+.Yearly-Targets .box-body div:nth-child(2) .info .progress .brd {
+  border-color: var(--orange) transparent transparent transparent;
+  left: 53%;
+}
+.Yearly-Targets .box-body div:last-child .info .progress .brd {
+  border-color: var(--green) transparent transparent transparent;
+  left: 73%;
+}
+
+/* Tickets-Statistics Part */
+.Tickets-Statistics .box-body {
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+.Tickets-Statistics .box-body div {
+  width: calc(50% - 10px);
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .Tickets-Statistics .box-body div {
+    width: 100%;
+  }
+}
+.Tickets-Statistics .box-body div i {
+  font-size: 30px;
+}
+.Tickets-Statistics .box-body div .number {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/* Latest News Part */
+
+.Latest-News .box-body > div img {
+  max-width: 20%;
+}
+.Latest-News .box-body div .info {
+  flex: 1;
+  padding-left: 20px;
+}
+
+@media (max-width: 767px) {
+  .Latest-News .head-info {
+    text-align: center;
+  }
+  .Latest-News .box-body > div {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .Latest-News .box-body > div img {
+    max-width: 50%;
+  }
+  .Latest-News .box-body div .info {
+    padding-left: 0;
+    margin: 10px 0;
+  }
+}
+
+/* Latest Tasks Part */
+
+.Latest-Tasks .box-body div i {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Top-Search-Items Part */
+.Top-Search-Items .head-info div {
+  font-size: 18px;
+}
+
+/* Latest Uploads Part */
+.Latest-Uploads .box-body > div {
+  padding: 20px 0;
+}
+.Latest-Uploads .box-body img {
+  width: 40px;
+  height: 40px;
+}
+.Latest-Uploads .box-body > div .info {
+  flex: 1;
+  padding-left: 10px;
+  line-height: 1.5;
+}
+.Latest-Uploads .box-body > div .info span {
+  text-transform: lowercase;
+}
+@media (max-width: 767px) {
+  .Latest-Uploads .box-body > div .info h3,
+  .Latest-Uploads .box-body > div .info p {
+    font-size: 14px;
+  }
+}
+
+/* Last Project Progress Part */
+.Last-Project-Progress img {
+  width: 40%;
+  right: 10px;
+  bottom: 0;
+  opacity: 0.1;
+}
+.Last-Project-Progress .box-body {
+  line-height: 2;
+  padding: 20px 0;
+}
+.Last-Project-Progress .box-body::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 190px;
+  left: 11px;
+  top: 41px;
+}
+.Last-Project-Progress .box-body li {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .Last-Project-Progress .box-body li {
+    font-size: 12px;
+  }
+  .Last-Project-Progress .box-body::before {
+    height: 185px;
+  }
+}
+.Last-Project-Progress .box-body li span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  border: 2px solid var(--white);
+  outline: 2px solid var(--blue);
+  z-index: 2;
+}
+.Last-Project-Progress .box-body li.keeping span {
+  animation: animate 0.5s alternate infinite;
+  -webkit-animation: animate 0.5s alternate infinite;
+}
+
+@keyframes animate {
+  from {
+    background-color: var(--blue);
+  }
+  to {
+    background-color: var(--white);
+  }
+}
+
+/* Reminders Part */
+
+.Reminders .box-body li {
+  margin-bottom: 25px;
+  padding-left: 60px;
+}
+.Reminders .box-body li::before {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  left: 5px;
+}
+.Reminders .box-body li::after {
+  width: 2px;
+  height: 100%;
+  left: 40px;
+}
+
+.Reminders .box-body li p {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+/* latest posts Part */
+
+.latest-posts .user-info {
+  margin-bottom: 20px;
+}
+.latest-posts .user-info img {
+  width: 60px;
+  height: 60px;
+}
+.latest-posts .user-info div {
+  padding-left: 15px;
+}
+.latest-posts .user-info div h3 {
+  margin-bottom: 5px;
+}
+.latest-posts .user-desc {
+  line-height: 2;
+  margin: 20px 0;
+  padding: 40px 0;
+  border-style: solid;
+  border-color: var(--bg) transparent var(--bg) transparent;
+  border-width: 1px;
+}
+.latest-posts .reacts i {
+  margin-right: 5px;
+}
+
+/* Social Media Stats Part */
+
+.Social-Media-Stats .box-body li {
+  margin-bottom: 10px;
+}
+.Social-Media-Stats .box-body li span {
+  flex: 1;
+  margin-left: 10px;
+}
+.Social-Media-Stats .box-body li a {
+  display: block;
+  padding: 5px;
+  font-size: 13px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.Social-Media-Stats .box-body li i {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 30px;
+}
+.Social-Media-Stats .box-body li i:hover {
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+}
+.Social-Media-Stats .box-body .twitter {
+  background-color: rgb(29 161 242 / 20%);
+}
+
+.Social-Media-Stats .box-body .twitter span {
+  color: #1da1f2;
+}
+
+.Social-Media-Stats .box-body .facebook {
+  background-color: rgb(24 119 242 / 20%);
+}
+
+.Social-Media-Stats .box-body .facebook span {
+  color: #1877f2;
+}
+
+.Social-Media-Stats .box-body .youtube {
+  background-color: rgb(255 0 0 / 20%);
+}
+
+.Social-Media-Stats .box-body .youtube span {
+  color: #ff0000;
+}
+
+.Social-Media-Stats .box-body .linkedin {
+  background-color: rgb(0 119 181 / 20%);
+}
+
+.Social-Media-Stats .box-body .linkedin span {
+  color: #0077b5;
+}
+
+/* Projects Part */
+.projects {
+  min-width: calc(100% * 2);
+  overflow-x: auto;
+}
+.projects .box-body {
+  overflow-x: auto;
+}
+@media (max-width: 767px) {
+}
+
+.projects table .imgs img {
+  width: 30px;
+  height: 30px;
+}
+.projects table .imgs img:not(:first-child) {
+  margin-left: -10px;
+}
+
+/*  */
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+@media (max-width: 767px) {
+  .content-table {
+    min-width: 420%;
+  }
+}
+.content-table thead tr {
+  background-color: var(--bg);
+  text-align: left;
+  font-weight: bold;
+  display: table-cell;
+  font-size: 16px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:hover {
+  background-color: var(--bg);
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr span {
+  display: block;
+  padding: 5px 10px;
+  text-align: center;
+  width: fit-content;
+  font-weight: bold;
+}
+/* End Dash */
+
+/* Shared Values */
+.Yearly-Targets .box-body div:first-child .info .progress::after,
+.Yearly-Targets .box-body div:first-child .info .progress::before,
+.Reminders .box-body li:first-child:before,
+.Reminders .box-body li:first-child:after,
+.Last-Project-Progress .box-body::before {
+  background-color: var(--blue);
+}
+.welcome a,
+.Quixk-Draft a {
+  justify-content: center;
+  margin: 20px;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  float: right;
+  opacity: 0.9;
+  font-size: 14px;
+}
+.welcome a:hover,
+.Quixk-Draft a:hover {
+  opacity: 1;
+}
+.Yearly-Targets .box-body div:first-child .icon i,
+.Tickets-Statistics .box-body div:nth-child(2) i {
+  color: var(--blue);
+}
+.Yearly-Targets .box-body div:nth-child(2) .icon i,
+.Tickets-Statistics .box-body div:first-child i {
+  color: var(--orange);
+}
+.Yearly-Targets .box-body div:last-child .icon i,
+.Tickets-Statistics .box-body div:nth-child(3) i {
+  color: var(--green);
+}
+.Yearly-Targets .box-body div:nth-child(2) .info .progress::before,
+.Yearly-Targets .box-body div:nth-child(2) .info .progress::after,
+.Reminders .box-body li:nth-child(3):before,
+.Reminders .box-body li:nth-child(3):after,
+.content-table tbody td.pending span {
+  background-color: var(--orange);
+}
+.Yearly-Targets .box-body div:last-child .info .progress::before,
+.Yearly-Targets .box-body div:last-child .info .progress::after,
+.Reminders .box-body li:nth-child(2):before,
+.Reminders .box-body li:nth-child(2):after,
+.content-table tbody td.comp span {
+  background-color: var(--green);
+}
+.Tickets-Statistics .box-body div:last-child i,
+.Latest-Tasks .box-body div i:hover {
+  color: var(--red);
+}
+.Latest-News .box-body > div,
+.Latest-Tasks .box-body > div,
+.Top-Search-Items .box-body > div {
+  padding-top: 15px;
+}
+.Latest-News .box-body > div:not(:last-child),
+.Latest-Tasks .box-body > div:not(:last-child),
+.Top-Search-Items .box-body > div:not(:last-child) {
+  border-bottom: 1px solid var(--bg);
+  padding: 15px 0;
+}
+.Latest-News .box-body div .info h3,
+.Latest-Tasks .box-body div .info h3 {
+  margin-bottom: 5px;
+}
+.Latest-News .box-body div .info p,
+.Latest-Tasks .box-body div .info p {
+  font-size: 15px;
+}
+.Latest-News .box-body div span,
+.Top-Search-Items .box-body > div span:last-child,
+.Latest-Uploads .box-body > div > span {
+  display: block;
+  padding: 10px;
+  background-color: var(--bg);
+  font-size: 13px;
+}
+.Latest-Tasks .box-body div:nth-last-of-type(2) .info h3,
+.Latest-Tasks .box-body div:nth-last-of-type(2) .info p {
+  text-decoration: line-through;
+}
+.Reminders .box-body li::before,
+.Reminders .box-body li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.Reminders .box-body li:last-child:before,
+.Reminders .box-body li:last-child:after,
+.content-table tbody td.rej span {
+  background-color: var(--red);
+}
+.Social-Media-Stats .box-body .twitter i,
+.Social-Media-Stats .box-body .twitter a {
+  background-color: #1da1f2;
+}
+.Social-Media-Stats .box-body .facebook i,
+.Social-Media-Stats .box-body .facebook a {
+  background-color: #1877f2;
+}
+.Social-Media-Stats .box-body .youtube i,
+.Social-Media-Stats .box-body .youtube a {
+  background-color: #ff0000;
+}
+.Social-Media-Stats .box-body .linkedin i,
+.Social-Media-Stats .box-body .linkedin a {
+  background-color: #0077b5;
+}
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+/* Mode Dark */
+.content.dark .head,
+.content.dark .Latest-News .box-body div span,
+.content.dark .Top-Search-Items .box-body > div span:last-child,
+.content.dark .Latest-Uploads .box-body > div > span {
+  background-color: var(--dark-mode-alt-two);
+}
+.content.dark .content-boxes > div {
+  background-color: var(--dark-mode-alt);
+}
+
+.content.dark .Quixk-Draft .box-body input,
+.content.dark .Quixk-Draft .box-body textarea {
+  background: none;
+  color: var(--bg);
+}
+
+.content.dark .content-table tbody tr:hover,
+.content.dark .content-table thead tr {
+  background-color: var(--dark-mode-alt-two);
+}
